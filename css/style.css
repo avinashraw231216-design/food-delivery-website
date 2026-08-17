@@ -1,0 +1,363 @@
+/* CSS Reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth ;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Image and Logo  */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    border-radius: 10px;
+    height: 61px;
+    margin: 4px 8px;
+}
+
+/* Navigation Bar: List styling  */
+
+
+#navbar ul {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 26px;
+    border-radius: 23px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    height: 560px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../OIP (1).webp') no-repeat center center/cover;
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+    opacity: 0.95;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-style: oblique;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: cursive;
+}
+
+/* Services Section */
+#Services {
+    margin: 33px;
+    display: flex;
+}
+
+#Services .box {
+    border: 2px solid red;
+    padding: 35px;
+    margin: 25px 10px;
+    border-radius: 28px;
+    background-color: rgb(238 227 206);
+    margin-bottom: 20px;
+}
+
+#Services .box img {
+    height: 200px;
+    width: 270px;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+}
+
+#Services p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* clients Section */
+#client-section {
+   height: 343px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 30px;
+}
+
+#clients img {
+    height: 150px;
+    width: 150px;
+    border-radius: 60px;
+
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(../contact\ .webp) no-repeat center center/cover;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 15px 25px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 3.9rem;
+    padding: 12px;
+    font-family: cursive;
+}
+
+.h-secondary {
+    font-size: 2.4rem;
+    padding: 12px;
+    font-family: cursive;
+
+}
+
+.btn {
+    padding: 7px 22px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    margin: 18px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+/* =========================================
+   FOOD MENU SECTION
+========================================= */
+
+#food-section {
+    padding: 40px 20px;
+    background: #f8f8f8;
+}
+
+#food-menu {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.food-card {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-card h3 {
+    margin: 15px 0 8px;
+    font-size: 22px;
+}
+
+.food-card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0 15px;
+}
+
+.food-card button {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.food-card button:hover {
+    background: #c1121f;
+}
+
+
+/* =========================================
+   CART SECTION
+========================================= */
+
+#cart-section {
+    padding: 40px 20px;
+    background: white;
+}
+
+#cart-items {
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.cart-item button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background: #e63946;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #c1121f;
+}
+
+.cart-summary {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+.cart-summary h2 {
+    margin: 10px;
+}
+
+.cart-summary .btn {
+    margin-top: 15px;
+}
