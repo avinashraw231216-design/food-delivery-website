@@ -1,6 +1,6 @@
 # 🍕 Food Delivery Website
 
-A responsive **Online Food Delivery Website** developed using **HTML and CSS**. The website provides a user-friendly interface for browsing food items, exploring restaurants, and accessing food delivery services.
+A responsive **Online Food Delivery Website** developed using **HTML, CSS AND Java Script**. The website provides a user-friendly interface for browsing food items, cart  management, exploring restaurants, and accessing food delivery services.
 
 ## 🚀 Project Overview
 
